@@ -86,7 +86,7 @@
                         {{ order_form.street_address1 | as_crispy_field }}
                         {{ order_form.street_address2 | as_crispy_field }}
                         {{ order_form.town_or_city | as_crispy_field }}
-                        {{ order_form.county | as_crispy_field }}            
+                        {{ order_form.county | as_crispy_field }}
                         {{ order_form.postcode | as_crispy_field }}
                         {{ order_form.country | as_crispy_field }}
                         <div class="form-check form-check-inline float-right mr-0">
@@ -105,11 +105,10 @@
                         <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
                         <!-- A Stripe card element will go here -->
                         <div class="mb-3" id="card-element"></div>
-
                         <!-- Used to display form errors -->
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
-
-                        <input type="hidden" value="{{ cleint_secret }}" name="client_secret">
+                        <!-- Pass the client secret to the view so we can get the payment intent id -->
+                        <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
 
                     <div class="submit-button text-right mt-5 mb-2">                    
@@ -139,7 +138,7 @@
     <div id="loading-overlay">
         <h1 class="text-light logo-font loading-spinner">
             <span class="icon">
-                <a class="fas fa-3x fa-sync-alt fa-spin"></a>
+                <i class="fas fa-3x fa-sync-alt fa-spin"></i>
             </span>
         </h1>
     </div>
