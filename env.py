@@ -1,0 +1,5 @@
+import os
+
+os.environ['STRIPE_PUBLIC_KEY'] = 'pk_test_51LuGJQKEidU8f4RUT8XLaBxjqSKlWXn7D5A9ld1hdUTuuy5yAUknn3SaqZXLp3Pigk7GbqU7QYT1WsObQWPo0LA700ckf7plHJ'
+os.environ['STRIPE_SECRET_KEY'] = 'sk_test_51LuGJQKEidU8f4RUgs2xkfRowcZlnnZFYgrAWtNPWMqOHgjKhJR4r2702HXXCEhXZ4Nw2vLTKvLnOBFzBSgsWdef003UhE9yPe'
+os.environ['STRIPE_WH_SECRET'] = 'whsec_B6DvY1YZTfvftelypFkW68YDtAd2RGl6'
